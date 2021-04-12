@@ -54,8 +54,8 @@ const PostDetails = ({ match, history }) => {
     )
   }
 
-  if (loading) return <h1>Loading...</h1>
-  if (error !== "") return <h1>{error}</h1>
+  if (loading) return <h1 className="text-center my-5 p-5">Loading...</h1>
+  if (error !== "") return <h1 className="text-center my-5 p-5">{error}</h1>
 
   return (
     <Container className="p-md-5 my-5 p-2">

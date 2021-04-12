@@ -45,8 +45,8 @@ const RenderPosts = ({ type }) => {
     }
   }
 
-  if (loading) return <h1 className="text-center mt-5">Loading...</h1>
-  if (error !== "") return <h1>{error}</h1>
+  if (loading) return <h1 className="text-center my-5 p-5">Loading...</h1>
+  if (error !== "") return <h1 className="text-center my-5 p-5">{error}</h1>
 
   return (
     <Container className="mt-5">

@@ -34,8 +34,8 @@ const EditPost = ({ history, match }) => {
     history.push("/")
   }
 
-  if (loading) <h1 className="text-center my-5 p-5">Loading...</h1>
-  if (error !== "") <h1>{error}</h1>
+  if (loading) return <h1 className="text-center my-5 p-5">Loading...</h1>
+  if (error !== "") return <h1 className="text-center my-5 p-5">{error}</h1>
 
   return (
     <Container className="p-5 my-5">
