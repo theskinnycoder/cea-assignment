@@ -1,22 +1,26 @@
 {
   "name": "cea-assignment",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
+    "@heroicons/react": "^1.0.0",
     "@reduxjs/toolkit": "^1.5.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "json-server": "^0.16.3",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
-    "react-redux": "^7.2.3",
-    "react-scripts": "4.0.3"
+    "react-redux": "^7.2.2",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "uuid": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "json-server --watch ./main/db.json --port 5000"
   },
   "eslintConfig": {
     "extends": "react-app"
