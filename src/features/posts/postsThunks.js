@@ -2,6 +2,11 @@ import { createAsyncThunk } from "@reduxjs/toolkit"
 import axios from "axios"
 import { v4 } from "uuid"
 
+axios.defaults.headers = {
+  "Access-Control-Allow-Origin": "*",
+  Accept: "application/json;odata.metadata=full",
+  "Content-Type": "application/json"
+}
 axios.defaults.baseURL =
   "my-json-server.typicode.com/theskinnycoder/cea-assignment/posts"
 
